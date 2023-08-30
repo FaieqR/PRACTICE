@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book a Course</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            margin: 5px 0;
+        }
+        
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>    
+    <!-- insert form here -->
+
+
+    <form action="">
+        <fieldset>
+            <legend>Your Details</legend>
+                <ul>
+                    <li>
+                        <label for="first">First Name</label>
+                        <input type="text" id="first" name="first" autofocus>
+                    </li>
+                    <li>
+                        <label for="sur">Surname</label>
+                        <input type="text" id="sur" name="sur">
+                    </li>
+                    <li>
+                        <label for="role">Position/Role</label>
+                        <input type="text" id="role" name="role">
+                    </li>
+                    <li>
+                        <label for="email" >Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@domain.com">
+                    </li>
+                    <li>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+44750000000">
+                    </li>
+                </ul>
+        </fieldset>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+        <legend>Course Details</legend>
+            <ul>
+                <li>
+                <label for="courses">Course</label>
+                <select name="courses" id="sources">
+                    <option value="Javascript">Programming with JavaScript</option>
+                    <option value="html5">Developing Web Applications using HTML5</option>
+                    <option value="response">Developing Responsive Websites</option>
+                    <option value="JQuery">Leveraging the Power of JQuery</option>
+                </select>
+                </li>
+                <li>
+                    <label for="delegates">Number of Delegates</label>
+                    <input type="number" id="delegates" name="delegates">
+                </li>
+                <li>
+                    <label for="date">Date</label>
+                    <input type="date" id="role" name="role">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <fieldset>
+        <input type="submit">
+    </fieldset>
+    <br>
+</body>
+</html>
+ 
