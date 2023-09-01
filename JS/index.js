@@ -1,26 +1,32 @@
-// Aritmetic Operators
-console.log(5 + 5);
-console.log(5 * 10);
-console.log(10 % 3);
-console.log(5 + 10 / 2 * 5 - 10);
-console.log((6 + 10) / 2 * 5 - 10);
+quote = ["I","am","your","friend"];
 
-// Assignment Operators
-x=0
-console.log(x = x + 1);
-console.log(x+= 1);
-console.log(x++);
-console.log(++x);
 
-// Relational Operators
-console.log(5 > 3);
-console.log(3 != 3);
-console.log(3 <= 2 && 5 >2);
-console.log(!5>3);
 
-// Mismatched Types
-console.log(5 + "5");
-console.log(5 + true);
-console.log(5 * "5");
-console.log(1 == true);
-console.log(1 === true);
+
+quote.pop();
+quote.push("father");
+quote.unshift("Luke");
+console.log(quote);
+
+let erroneuosWord = "Luke"
+lukeIsHere=quote.includes(erroneuosWord);
+let lukeIsAt
+
+if (lukeIsHere) {
+    lukeIsAt = quote.indexOf(erroneuosWord);
+    quote[lukeIsAt] = "No";
+    console.log(quote)
+}
+
+output=""
+
+for (let i = 0, j = quote.length; i < j; i++) {
+    if (i === j - 1) {
+        output += quote[i] + '!';
+    } else if (quote[i] === 'No') {
+        output += quote[i] + ', ';
+    } else {
+        output += quote[i] + ' '
+    }
+    console.log(output)
+}
