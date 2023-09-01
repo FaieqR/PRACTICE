@@ -1,18 +1,26 @@
-let numTest = 45.324568;
-console.log(numTest);
+// Aritmetic Operators
+console.log(5 + 5);
+console.log(5 * 10);
+console.log(10 % 3);
+console.log(5 + 10 / 2 * 5 - 10);
+console.log((6 + 10) / 2 * 5 - 10);
 
-let twoDecimalPoints = numTest.toFixed(2);
-console.log(twoDecimalPoints);
+// Assignment Operators
+x=0
+console.log(x = x + 1);
+console.log(x+= 1);
+console.log(x++);
+console.log(++x);
 
-let stringTest = `I am the very model of a modern major general`;
-stringTest = stringTest.toUpperCase();
-let indexOfM = stringTest.indexOf(`M`);
-console.log(indexOfM);
+// Relational Operators
+console.log(5 > 3);
+console.log(3 != 3);
+console.log(3 <= 2 && 5 >2);
+console.log(!5>3);
 
-let start = stringTest.indexOf("MODEL");
-let end = stringTest.lastIndexOf('MAJOR');
-
-let subStr = stringTest.substring(start, end);
-console.log(subStr);
-
-document.write("<p>" + subStr + "</p>");
+// Mismatched Types
+console.log(5 + "5");
+console.log(5 + true);
+console.log(5 * "5");
+console.log(1 == true);
+console.log(1 === true);
