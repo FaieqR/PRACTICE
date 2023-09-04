@@ -54,3 +54,5 @@ function myMovieDetails(anyMovie) {
 }
 
 console.log(myMovieDetails(myOtherMovie))
+
+console.log(myMovieDetails(myOtherMovie))
